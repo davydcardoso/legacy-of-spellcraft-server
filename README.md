@@ -38,6 +38,36 @@ This project is a multiplayer online role-playing game (MMORPG) server built wit
   pnpm start:zone
   ```
 
+## Socket Events
+##### The server listens for the following socket events:
+- `auth:set`: Authenticate and set player information.
+   ```bash
+   { "type": "auth:set", "payload": { "charId": "char-uuid-123", "name": "Harry", "pos": { "x": 10, "y": 20 } } }
+   ```
+- `zone:enter`: Enter a specified zone.
+   ```bash
+   { "type": "zone:enter", "payload": { "zoneId": "hogwarts_hall", "pos": { "x": 1, "y": 1 } } }
+   ```
+- `player:action`: Perform a player action.
+   ```bash
+   { "type": "player:action", "payload": { "action": "cast_spell", "spellId": 2, "targetId": "char-uuid-999" } }
+   ```
+- `chat:message`: Send a chat message.
+   ```bash
+   { "type": "chat:msg", "payload": { "channel": "zone", "text": "I found a secret chest" } }
+   ```
+- `spell:cast`: Cast a spell in the game.
+- `player:move`: Move the player to a new position.
+
+- `item:use`: Use an item from the inventory.
+- `item:trade`: Trade items with another player.
+- `npc:interact`: Interact with a non-player character (NPC).
+- `quest:update`: Update quest status.
+- `logout`: Log out the player from the server.
+
+
+
 ## Contributing
 Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
 
