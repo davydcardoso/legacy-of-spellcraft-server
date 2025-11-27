@@ -56,14 +56,13 @@ This project is a multiplayer online role-playing game (MMORPG) server built wit
    ```bash
    { "type": "chat:msg", "payload": { "channel": "zone", "text": "I found a secret chest" } }
    ```
-- `spell:cast`: Cast a spell in the game.
-- `player:move`: Move the player to a new position.
-
-- `item:use`: Use an item from the inventory.
-- `item:trade`: Trade items with another player.
-- `npc:interact`: Interact with a non-player character (NPC).
-- `quest:update`: Update quest status.
-- `logout`: Log out the player from the server.
+- `spell:cast`: Cast a spell in the game.(Not created yet)
+- `player:move`: Move the player to a new position.(Not created yet)
+- `item:use`: Use an item from the inventory.(Not created yet)
+- `item:trade`: Trade items with another player.(Not created yet)
+- `npc:interact`: Interact with a non-player character (NPC).(Not created yet)
+- `quest:update`: Update quest status.(Not created yet)
+- `logout`: Log out the player from the server.(Not created yet)
 
 
 
