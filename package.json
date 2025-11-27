@@ -1,0 +1,17 @@
+{
+  "name": "mmorpg-backend-example",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "start:server": "nodemon src/server.js",
+    "start:zone": "NODE_ZONE=1 nodemon src/core/zone.js"
+  },
+  "dependencies": {
+    "ioredis": "^5.3.2",
+    "jsonwebtoken": "^9.0.0",
+    "nodemon": "^3.1.11",
+    "pg": "^8.11.0",
+    "uWebSockets.js": "github:uNetworking/uWebSockets.js#v20.56.0",
+    "uuid": "^13.0.0"
+  }
+}
